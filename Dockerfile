@@ -24,11 +24,10 @@ RUN set -ex \
 
     && apk add --no-cache --virtual --update \
     python2 \
+    openjdk8 \
 
     # Cleanup
 
     && rm -rf /var/cache/apk/* \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /tmp/*
-
-ENTRYPOINT ["cqlsh"]
