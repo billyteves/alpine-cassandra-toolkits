@@ -3,6 +3,7 @@ FROM alpine:3.6
 MAINTAINER Billy Ray Teves <billyteves@gmail.com>
 
 ENV CASSANDRA_VERSION      cassandra-3.11.0
+ENV PATH                   "$PATH:/opt/cassandra/bin"
 
 RUN set -ex \
     && apk add --no-cache ca-certificates \
