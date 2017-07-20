@@ -30,5 +30,3 @@ RUN set -ex \
     && rm -rf /var/cache/apk/* \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /tmp/*
-
-ENTRYPOINT ["/init"]
